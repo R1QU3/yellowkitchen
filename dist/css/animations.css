@@ -1,0 +1,18 @@
+.perspectiveRightReturn {
+  animation: perspectiveRightReturn 1s ease-in-out;
+}
+@keyframes perspectiveRightReturn {
+  0% {
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: perspective(800px) rotateY(180deg);
+    transform: perspective(800px) rotateY(180deg);
+  }
+
+  100% {
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yellowkitchen</title>
+  <!-- Main styles -->
+  <!-- <link rel="stylesheet" href="./dist/main.min.css"> -->
+  <!-- Out -->
+  <link rel="stylesheet" href="./dist/css/animations.css">
+  <link rel="stylesheet" href="./dist/css/output.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;700;800&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body class="pt-[97px]">
+  
+  <header class="py-6 px-4 border-b fixed top-0 left-0 right-0">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <a href="#">
+        <img src="./src/assets/images/logos/yellow_kitchen_logo.svg" alt="Logo">
+      </a>
+      <div class="flex gap-12">
+        <a href="#" class="items-center hidden sm:flex">
+          <img src="./src/assets/images/icons/user.svg" alt="User">
+          <span class="ml-3 font-body font-bold text-[#9093A6]">Log in</span>
+        </a>
+        <button class="items-center hidden sm:flex">
+          <img src="./src/assets/images/icons/cart.svg" alt="">
+          <span class="ml-3 font-body font-bold text-[#9093A6]">0</span>
+        </button>
+        <button id="toggleMenu" class="p-3 shadow-lg rounded-full">
+          <img width="24" height="24" id="menu-icon" class="transition-all duration-700" src="./src/assets/images/icons/hamburger.svg" alt="">
+        </button>
+      </div>
+    </div>
+    
+    <!-- Menu wrapper -->
+    <div id="menu-wrapper" class="hidden fixed bottom-0 left-0 w-full h-[calc(100%-97px)] bg-[#11182760] backdrop-opacity-10 z-40">
+      <div id="menu-container" data-menu class="hidden perspectiveRightReturn fixed bottom-0 right-0 h-full max-w-md w-full bg-white border-l px-10 py-5 z-50">
+        <span class="flex">
+          <img class="mr-3" width="24" height="24" src="./src/assets/images/icons/phone.svg" alt="Phone">
+          <span class="text-[#3F4255] font-bold font-body text-lg">
+            0800 111 126
+          </span>
+        </span>
+        <span class="ml-9">
+          8:00 - 22:00
+        </span>
+        <nav class="mt-5">
+          <ul class="divide-y border-y py-5 font-body font-bold text-xl">
+            <li class="pb-5">
+              <a class="leading-6 text-[#9093A6]" href="#">
+                Delivery info
+              </a>
+            </li>
+            <li class="py-5">
+              <a class="leading-6 text-[#9093A6]" href="#">
+                About us
+              </a>
+            </li>
+            <li class="py-5">
+              <a class="leading-6 text-[#9093A6]" href="#">
+                Restaurants
+              </a>
+            </li>
+            <li class="pt-5">
+              <a class="leading-6 text-[#9093A6]" href="#">
+                Specialities
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+
+  <p>Pagina</p>
+
+  <script src="./src/scripts/main.js"></script>
+</body>
+</html>
