@@ -5,11 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>yellowkitchen</title>
-  <!-- Main styles -->
-  <!-- <link rel="stylesheet" href="./dist/main.min.css"> -->
   <!-- Out -->
-  <link rel="stylesheet" href="./dist/css/animations.css">
   <link rel="stylesheet" href="./dist/css/output.css">
+  <!-- Animations -->
+  <link rel="stylesheet" href="./dist/css/animations.css">
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +16,7 @@
 </head>
 <body class="pt-[97px]">
   
-  <header class="py-6 px-4 border-b fixed top-0 left-0 right-0">
+  <header class="py-6 px-4 border-b fixed top-0 left-0 right-0 bg-white">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <a href="#">
         <img src="./src/assets/images/logos/yellow_kitchen_logo.svg" alt="Logo">
@@ -78,7 +77,65 @@
 
   </header>
 
-  <p>Pagina</p>
+  <section class="max-w-7xl w-full mx-auto h-[calc(100vh-97px)]">
+    <div class="w-full h-full grid lg:grid-cols-2 items-center px-4">
+
+      <!-- Grid 1 -->
+      <div>
+        <h1 class="font-display font-light leading-[64px] text-6xl mt-12 lg:mt-0 lg:max-w-lg text-center lg:text-left">
+          Your Food court at home
+        </h1>
+
+        <div class="mt-20 flex justify-center lg:justify-start gap-1">
+
+          <button class="py-4 px-6 rounded border-2 border-[#FFE145] hover:bg-[#FFE145] transition-all inline-flex flex-col justify-center items-center">
+            <span class="font-bold font-body text-lg">Delivery</span>
+            <span class="font-body font-light">Order in</span>
+          </button>
+
+          <button class="py-4 px-6 rounded border-2 border-[#FFE145] hover:bg-[#FFE145] transition-all inline-flex flex-col justify-center items-center">
+            <span class="font-bold font-body text-lg">Takeout</span>
+            <span class="font-body font-light">Grab and go</span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Grid 2 -->
+      <div>
+        <img src="./src/assets/images/content/bg.png" alt="">
+      </div>
+
+      <!-- Grid 3 -->
+      <div class="lg:col-span-2 w-full grid lg:grid-cols-4">
+        <div class="bg-white rounded shadow-xl p-7 lg:col-span-3 flex flex-wrap justify-center lg:justify-start gap-5 items-center">
+
+          <div class="flex">
+            <img src="./src/assets/images/icons/infographic/time-eat.svg" alt="Time clock">
+            <span class="inline-block max-w-[200px] w-full ml-4 font-light leading-6 text-lg">
+              delivery in all paris in less than 30 minutes
+            </span>
+          </div>
+
+          <div class="flex">
+            <img src="./src/assets/images/icons/infographic/delivery.svg" alt="Delivery">
+            <span class="inline-block max-w-[150px] w-full ml-4 font-light leading-6 text-lg">
+              Free delivery from 29 euros
+            </span>
+          </div>
+
+          <div class="flex">
+            <img src="./src/assets/images/icons/infographic/paris.svg" alt="paris.svg">
+            <span class="inline-block max-w-[200px] w-full ml-4 font-light leading-6 text-lg">
+              Only fresh and French products
+            </span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <script src="./src/scripts/main.js"></script>
 </body>
